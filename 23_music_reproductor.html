@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeros pasos y estructura inicial</title>
+</head>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+:root {
+  --blue: #EAF0F8;
+}
+
+body {
+  margin: 0;
+  background: var(--blue);
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-rows: 60px 300px auto auto;
+    height: 100vh;
+}
+
+.header{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards div{
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #dee0e8;
+    box-shadow:  5px 5px 0px #595a5d,
+             -5px -5px 0px #ffffff;
+}
+
+</style>
+
+
+<body>
+<div class="wrapper">
+
+    <header class="header">
+        <p>Playing Now</p>
+    </header>
+    <section class="cards">
+        <div>
+
+        </div>
+    </section>
+    <section class="progress__bar">
+
+    </section>
+    <footer class="buttons">
+
+    </footer>
+
+</div>
+</body>
+</html>

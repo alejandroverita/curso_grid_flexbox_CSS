@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinamica ¿Que usarias?</title>
+</head>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #2e2ec2;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.card{
+    padding: 10px;
+    width: 350px;
+    height: auto;
+    background-color: #101216;
+    margin: auto;
+   
+    box-shadow: 0 0 12px 4px rgba(55, 55, 55, 0.5);
+}
+
+.header{
+    display: grid;
+    grid-template-areas: 
+                        "img title"
+                        "img subtitle";
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+  
+}
+
+
+.header__img{
+    grid-area: img;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+   justify-self: center;
+
+}
+
+.header__title{
+    margin: 10px;
+    grid-area: title;
+}
+
+.header__subtitle{
+    grid-area:subtitle;
+    font-size: 1.4rem;
+    margin: 10px;
+}
+
+.main{
+    /* display: flex; */
+}
+
+.main__img img{
+    display: block;
+    width: 100%;
+    height: auto;
+   
+}
+
+.main__paragraph p {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.footer{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.footer .container__footer {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.footer .container__footer button{
+    background-color: azure;
+    font-size: 1.4rem;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.container__footer--icons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
+}
+
+
+
+
+
+</style>
+<body>
+<article class="card">
+
+
+    <header class="header">
+        <img class="header__img" src="./plane.jpg" alt="plane">
+        <h1 class="header__title">
+            El titulo va aqui
+        </h1>
+        <h2 class="header__subtitle">
+            Segundo Titulo
+        </h2>
+    </header>
+    
+    
+   <main class="main">
+        <section class="main__img">
+            <img src="./aircraft.jpg" alt="aircraft">
+        </section>
+        <section class="main__paragraph">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem dolore veniam commodi velit quae laborum quas corrupti facilis vitae provident! Itaque fuga, unde recusandae accusantium aliquid illo sunt dicta minima!
+            </p>
+        </section>
+    </main>
+    
+     
+    <footer class="footer">
+        <div class="container__footer">
+            <button class="container__footer--button-one">
+                Action 1
+            </button>
+            <button class="container__footer--button-second">
+                Action2
+            </button>
+        </div>
+        <div class="container__footer--icons">
+            <span class="icon__heart">
+                <img src="./SVG/heart.svg" alt="">
+            </span>
+            <span class="icon__share">
+                <img src="./SVG/shuffle.svg" alt="">
+            </span>
+        </div>
+    </footer> 
+</article>
+</body>
+</html>
