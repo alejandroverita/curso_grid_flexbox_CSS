@@ -755,5 +755,58 @@ Uno mas grande al centro y las otras dos a cada lado.
 [========]
 
 
+## EL FUTURO DE CSS GRID
+
+### CSS SUBGRID
+
+- Experimental
+- Soportado solo por Firefox actualmente: mar/2021
+
+------------
+
+### NATIVE CSS MASSONRY LAYOUT
+
+Basicamente un modelo de grillas como pinterest.
+
+Masonry, en español Mampostería. Se llama mampostería al sistema tradicional de construcción que consiste en erigir muros y paramentos mediante la colocación manual de los elementos o los materiales que los componen (denominados mampuestos), que pueden caracterizarse por estar sin labrar.
+
+<img src="https://www.aparicio-partner.com/wp-content/uploads/2017/05/foto_sassi_rocce_02-1024x675.jpg" alt="monssonry layout">
+
+[Lecturra son monssory](https://www.smashingmagazine.com/native-css-masonry-layout-css-grid/ "Lecturra son monssory")
+
+------------
+
+### CSS FEATURE QUERIES: @SUPPORTS
+
+Por ejemplo:
+
+    @supports (grid-template-columns) and (not (subgrid)) {
+    	// Creas las columnas del padre dentro del hijo
+    }
+    
+    //Si soportas grid-template-columns y no soportas subgrid, interpreta el contenido de las llaves
+    
+    @supports (subgrid) {
+    	grid-template-columns: subgrid;
+    }
+    //Si soportas subgrid interpreta el contenido de las llaves
+
+[Suports](https://css-tricks.com/get-ready-for-display-contents/ "Suports")
+
+### TIPS PARA SEGUIR APRENDIENDO Y MANTENERSE AL DÍA
+
+- Seguir personas que pertenezcan al CSS Work Group
+	- Rachel Andrews
+	- Jen Simmons
+	- Adam Argyle
+- Leer Mucho
+	- Medium
+	- MDN Mozilla Developers
+	- Smashing Magazine
+- Tener paciencia
+- Mucha practica
+
+
+[========]
 
 
